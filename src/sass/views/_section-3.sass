@@ -1,0 +1,101 @@
+
+// 3
+.section-3
+  @media (max-width: $tablet)
+    display: flex
+    flex-direction: column-reverse
+
+  .text-block
+    +ff('max-width', (1920px: 580px, 2550px: 660px))
+    position: absolute
+    left: 47%
+    top: 40%
+    @media (max-width: 1200px)
+      max-width: 48%
+
+    @media (max-width: $tablet)
+      margin: 0 auto
+      position: static
+      max-width: 510px
+      margin-top: 64px
+      margin-bottom: 72px
+
+    @media (max-width: $mob)
+      max-width: 100%
+      padding-left: 32px
+      padding-right: 32px
+    
+
+  .image-block
+    position: absolute
+    @media (max-width: $tablet)
+      +static
+
+    &--bottom
+      bottom: 0
+      left: 0
+      transform: translateX(-48%)
+      width: 34%
+      padding-bottom: 17.7%
+
+      @media (max-width: $tablet)
+        transform: translate(0, -50vw)
+        padding: 0
+        width: 81%
+        height: 70vw
+        max-width: 480px
+        max-height: 560px
+        margin-bottom: -50vw
+
+      .image-block__inner
+        transform: scale(1.2)
+        @media (max-width: $tablet)
+          transform: scale(1)
+
+    &--top
+      bottom: 0
+      left: 0
+      transform: translate(40%, -12vh)
+      width: 27.6%
+      padding-bottom: 39%
+
+      @media (max-width: $tablet)
+        margin-left: auto
+        padding: 0
+        width: 82%
+        height: 115vw
+        max-width: 480px
+        max-height: 660px
+        transform: translate(0, 0)
+
+      .image-block__inner
+        transform: scale(1.2)
+        @media (max-width: $tablet)
+          transform: scale(1)
+
+  .cover
+    &--top
+      width: 3.2%
+      height: 32%
+
+      // background: #C4B077
+      background-color: #3A3423
+
+      // transform: skewY(-20deg)
+      transform: rotateY(91deg) translate3d(-450vw, 0, 0)
+      top: -2%
+      right: 9%
+
+    &--bottom
+      width: 1.5%
+      height: 18.3%
+
+      left: 47%
+      bottom: 0
+
+      opacity: 0.2
+      background: #3A3423
+      // transform: skewY(20deg)
+      transform: rotateY(91deg) translate3d(-450vw, 0, 0)
+
+

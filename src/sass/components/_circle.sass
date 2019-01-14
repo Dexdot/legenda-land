@@ -1,0 +1,24 @@
+.circle
+  width: 50%
+  position: absolute
+  top: 0
+  left: 0
+  transform: translate(-19%, -6%)
+
+  @media (max-width: $tablet)
+    transform: translate(-1%, -12%)
+    width: 144%
+    max-width: 1000px
+
+  &-path
+    fill: none
+    opacity: 0.3
+    stroke: $acc
+    stroke-width: 0.05
+    stroke-dasharray: 0 100
+    stroke-linecap: round
+
+    @media (max-width: $tablet)
+      stroke-dasharray: 100 100
+
+

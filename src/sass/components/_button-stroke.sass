@@ -1,0 +1,40 @@
+.button-stroke
+  +link-color(rgba($acc, 0.8))
+  +rbt(r)
+  font-size: 10px
+  letter-spacing: 0.1em
+  text-transform: uppercase
+  transition: .45s cubic-bezier(.4,0,0,1)
+
+  padding: 16px 48px
+  position: relative
+  
+  &::before, &::after
+    content: ''
+    position: absolute
+    width: 100%
+    height: 100%
+    top: 0
+    left: 0
+    right: 0
+    bottom: 0
+    transition: .45s cubic-bezier(.4,0,0,1)
+    border: 1px solid $acc
+
+  &::before
+    transform: translate(-3px, 3px)
+    opacity: 0.3
+    // border: 1px solid rgba($acc, 0.2)
+
+  &::after
+    transform: translate(3px, -3px)
+    opacity: 0.2
+    // border: 1px solid rgba($acc, 0.1)
+
+  &:hover
+    +link-color(rgba($acc, 1))
+    &::before, &::after
+      opacity: 1
+      transform: translate(0, 0)
+
+

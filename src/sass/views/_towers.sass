@@ -1,0 +1,65 @@
+.enter-button
+  z-index: 30
+  position: fixed
+  bottom: 80px
+  left: 50%
+  transform: translate(-50%, 0)
+  opacity: 0
+  
+  +rbt(b)
+  color: #fff
+  font-size: 10px
+  letter-spacing: 0.12em
+  text-transform: uppercase
+  
+  // &__line
+  //   position: absolute
+  //   background: #fff
+
+  //   &.t-left
+  //     top: 11px
+  //     left: -26px
+  //     width: 78px
+  //     height: 1px
+  //     transform: rotate(-45deg) scaleX(0.5)
+  //     transform-origin: 50% 0%
+  //     display: block
+
+  //   &.t-right
+  //     top: 12px
+  //     right: -28px
+  //     width: 100%
+  //     height: 1px
+  //     transform: rotate(45deg)
+  //   &.b-left      
+  //     bottom: 12px
+  //     left: -28px
+  //     width: 100%
+  //     height: 1px
+  //     transform: rotate(45deg)
+  //   &.b-right
+  //     bottom: 12px
+  //     right: -28px
+  //     width: 100%
+  //     height: 1px
+  //     transform: rotate(-45deg)
+
+  
+  // &::before
+  //   transform: rotate(45deg)
+  //   opacity: 1
+
+  // &::after
+  //   display: none
+
+  
+.towers-canvas
+  z-index: -1
+  position: fixed
+  top: 0
+  left: 0
+  right: 0
+  bottom: 0
+
+  width: 100%
+  height: 100%

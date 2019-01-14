@@ -1,0 +1,187 @@
+.section-7
+  margin-left: 30.4vw
+
+  @media (max-width: $tablet)
+    margin-left: 0
+    display: flex
+    flex-direction: column
+
+  .text-block__title
+    position: absolute
+    left: 48px
+    top: 50px
+    transform: rotate(180deg)
+    writing-mode: vertical-lr
+
+    display: none
+    @media (max-width: $tablet)
+      display: block
+
+  &__title
+    +metro
+    +ff('font-size', (1300px: 80px, 1920px: 120px))
+    line-height: 1
+    letter-spacing: 0.06em
+    text-transform: uppercase
+    color: rgba($acc, 0.1)
+
+    @media (max-width: $tablet)
+      display: none
+
+  .elevator
+    position: absolute
+    top: 0
+    left: 0
+    width: 18%
+    padding-bottom: 26.2%
+    transform: translate(-8.2%, -22%)
+
+    @media (max-width: 1200px)
+      padding-bottom: 38%
+    @media (max-width: $tablet)
+      +static
+      transform: translate(0, 0)
+      width: 78%
+      height: 134vw
+      max-width: 360px
+      max-height: 518px
+      margin-left: auto
+      padding: 0
+      z-index: -1
+
+      &::before
+        z-index: 1
+        content: ''
+        position: absolute
+        top: 0
+        left: 0
+        right: 0
+        width: 100%
+        height: 28vw
+        background: linear-gradient(180deg, #231F20 0%, rgba(35, 31, 32, 0) 100%)
+
+
+  .image-block
+    position: absolute
+
+  .image-block--left
+    bottom: 0
+    left: 0
+    width: 39%
+    padding-bottom: 41%
+    transform: translate(-14vw, 0)
+
+    @media (max-width: $tablet)
+      position: static
+      transform: translate(0, -270px)
+      max-width: 480px
+      max-height: 774px
+      margin-left: auto
+      width: 100%
+      height: 161vw
+      padding: 0
+      margin-bottom: -270px
+
+    .image-block__inner
+      transform: scale(1.2)
+      @media (max-width: $tablet)
+        transform: scale(1)
+
+  .image-block--right
+    bottom: 0
+    right: 0
+    width: 34%
+    padding-bottom: 17.7%
+    transform: translate(68%, 0)
+    order: 3
+    
+    @media (max-width: $tablet)
+      position: static
+      transform: translate(0, 0)
+      margin-left: auto
+      width: 94%
+      height: 86vw
+      max-width: 480px
+      max-height: 525px
+      margin-bottom: 180px
+      padding: 0
+
+      &::before
+        content: ''
+        position: absolute
+        top: -71px
+        right: 49.5vw
+        bottom: -70px
+        width: 100%
+        height: calc(100% + 140px)
+        border: 1px solid $acc
+        opacity: 0.3
+
+    .image-block__inner
+      transform: scale(1.2)
+      @media (max-width: $tablet)
+        transform: scale(1)
+
+
+.section-7__block
+  position: absolute
+  top: 23.4%
+  left: 50%
+  transform: translate(-#{$cell-size * 2}, 0)
+  @media (max-width: 1700px)
+    transform: translate(-#{$cell-size-sm * 1.5}, 0)
+  @media (max-width: 1200px)
+    transform: translate(-#{140px * 1.5}, 0)
+  @media (max-width: $tablet)
+    order: 3
+    position: static
+    transform: translate(0, 0)
+  
+
+  .cells
+    +ff('margin-bottom', (1300px: 56px, 1920px: 120px))
+    @media (max-width: $tablet)
+      margin-bottom: 70px
+
+
+
+.section-7
+  .cover
+    &--left
+      width: 2.2%
+      height: 24%
+
+      opacity: 0.2
+      // background: linear-gradient(90deg,#bb971f 0,#ffd970 100%), #f7d26d
+      background-color: #3A3423
+
+      // transform: skewY(30deg)
+      bottom: -2%
+      left: -28vw
+    
+    &--center
+      width: 3.4%
+      height: 67%
+
+      top: -2%
+      left: -7vw
+
+      // background: linear-gradient(90deg,#bb971f 0,#ffd970 100%), #f7d26d
+      background-color: #3A3423
+      // transform: skewY(30deg)
+    
+    &--right
+      width: 1.1%
+      height: 20%
+
+      bottom: -1.5%
+      right: 32%
+
+      opacity: 0.2
+      background-color: #3A3423
+      // background: linear-gradient(90deg,#bb971f 0,#ffd970 100%), #f7d26d
+      // transform: skewY(30deg)
+
+
+
+

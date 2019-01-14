@@ -1,0 +1,104 @@
+[data-micromodal-trigger]
+  cursor: pointer
+  
+.m-modal
+  z-index: 30
+  position: relative
+  opacity: 0
+  pointer-events: none
+  &.is-open
+    opacity: 1
+    pointer-events: auto
+
+.m-modal-image
+  display: block
+  max-width: 100%
+  height: auto
+  margin: auto
+
+.m-modal__overlay
+  z-index: 3
+  position: fixed
+  width: 100vw
+  height: 100vh
+  top: 0
+  left: 0
+  right: 0
+  bottom: 0
+  background: rgba(0, 0, 0, 0.6)
+  display: flex
+  align-items: center
+  justify-content: center
+
+.m-modal__container
+  background: #fff
+  +scrollbar
+
+  position: relative
+  max-width: 96vw
+  max-height: 96vh
+
+.m-modal__close
+  z-index: 1
+  position: absolute
+  top: 24px
+  right: 24px
+  width: 20px
+  height: 20px
+
+  .i-close
+    pointer-events: none
+    stroke: #fff
+
+  @media (max-width: 600px)
+    top: 20px
+    right: 5vw
+
+@keyframes mmfadeIn
+  from
+    opacity: 0
+  to
+    opacity: 1
+
+@keyframes mmfadeOut
+  from
+    opacity: 1
+  to
+    opacity: 0
+
+@keyframes mmslideIn
+  from
+    transform: scale(0.9)
+  to
+    transform: scale(1)
+
+@keyframes mmslideOut
+  from
+    transform: scale(1)
+  to
+    transform: scale(0.9)
+
+
+.m-modal[aria-hidden="false"] .m-modal__overlay
+  animation: mmfadeIn .3s cubic-bezier(0.0, 0.0, 0.2, 1)
+
+.m-modal[aria-hidden="false"] .m-modal__container
+  animation: mmslideIn .3s cubic-bezier(0, 0, .2, 1)
+
+.m-modal[aria-hidden="true"] .m-modal__overlay
+  animation: mmfadeOut .3s cubic-bezier(0.0, 0.0, 0.2, 1)
+
+.m-modal[aria-hidden="true"] .m-modal__container
+  animation: mmslideOut .3s cubic-bezier(0, 0, .2, 1)
+
+.m-modal .m-modal__container,
+.m-modal .m-modal__overlay
+  will-change: transform
+
+#modal-image .modal__container
+  max-width: unset
+  max-height: unset
+  width: unset
+  padding: 0
+
+

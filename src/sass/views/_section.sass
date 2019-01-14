@@ -1,0 +1,48 @@
+.sections
+  pointer-events: none
+  white-space: nowrap
+
+  @media (max-width: $tablet)
+    overflow-x: hidden
+    pointer-events: auto
+    white-space: unset
+
+
+.section
+  opacity: 0
+  pointer-events: none
+  transition: opacity 0.4s ease
+  
+  &.loaded
+    opacity: 1
+    pointer-events: auto
+
+
+.section
+  z-index: 20
+  position: relative
+
+  display: inline-flex
+  vertical-align: top
+  min-width: 100vw
+  min-height: 100vh
+  max-height: 100vh
+
+  white-space: normal
+
+  @media (max-width: $tablet)
+    display: block
+    min-width: unset
+    min-height: unset
+    max-height: unset
+
+  .i-towers
+    position: absolute
+    top: 32px
+    left: 50%
+    transform: translateX(-50%)
+    width: 6px
+    height: 20px
+
+    @media (max-width: $tablet)
+      display: none

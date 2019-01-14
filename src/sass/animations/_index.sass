@@ -1,0 +1,72 @@
+// Fade Up
+.fadeup
+  opacity: 0
+  transform: translate3d(0, 48px, 0)
+  transition-duration: 0.8s
+  transition-timing-function: ease
+  &.visible
+    opacity: 1
+    transform: translateZ(0)
+
+// Fade Up Large
+.fadeup-lg
+  opacity: 0
+  transform: translate3d(0, 64px, 0)
+  transition-duration: 0.8s
+  transition-timing-function: ease
+  &.visible
+    opacity: 1
+    transform: translateZ(0)
+  
+  &.grid-item
+    &:nth-child(odd)
+      transition-delay: 0.2s
+    &:nth-child(even)
+      transition-delay: 0.1s
+
+// Fade
+.fade
+  opacity: 0
+  transform: scale(1.025)
+  transition-duration: 0.8s
+  transition-timing-function: ease
+  &.visible
+    opacity: 1
+    transform: scale(1)
+
+// Stagger Fade Up
+.stg-fadeup
+  opacity: 0
+  transform: translateY(24px)
+  transition-duration: 0.5s
+  transition-timing-function: ease
+  &.visible
+    opacity: 1
+    transform: translateY(0)
+
+// Stagger Fade Up - Small
+.stg-fadeup-sm
+  opacity: 0
+  transform: translateY(10px)
+  transition-duration: 0.5s
+  transition-timing-function: ease
+  &.visible
+    opacity: 1
+    transform: translateY(0)
+
+
+.origin-l
+  transform-origin: 0% 50%
+
+.origin-r
+  transform-origin: 100% 50%
+
+.fadeup-block
+  &.visible .fadeup
+    opacity: 1
+    transform: translateZ(0)
+
+@for $i from 1 through 10
+  .fadeup-block .fadeup:nth-child(#{$i})
+    transition-delay:(#{$i*0.15s})
+

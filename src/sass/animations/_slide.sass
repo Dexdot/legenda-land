@@ -1,0 +1,18 @@
+.slide
+  pointer-events: none
+
+  &__img    
+    transition-duration: 0.4s
+    transition-timing-function: ease-in-out
+    opacity: 0
+    transform: translate3d(0, 0, 0) scale(1.02)
+
+
+.slide.is-active
+  pointer-events: auto
+  .slide
+    &__img
+      transition-delay: 0.35s
+      opacity: 1
+      transform: scale(1)
+      

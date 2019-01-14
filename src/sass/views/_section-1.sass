@@ -1,0 +1,138 @@
+// 1
+.section-1
+
+  .i-legenda-logo
+    width: 106px
+    height: 48px
+    position: absolute
+    top: 32px
+    left: 32px
+    display: none
+
+    @media (min-width: 901px)
+      display: block
+      
+
+  .image-block
+    position: absolute
+    transform-style: preserve-3d
+    transform-origin: center right
+
+    @media (max-width: $tablet)
+      display: none
+
+    &--top
+      top: 0
+      left: 18%
+      width: 28%
+      padding-bottom: 15%
+      perspective-origin: bottom right
+      transform: perspective(1000px)
+
+    &--left
+      bottom: 0
+      left: 0
+      width: 23%
+      padding-bottom: 15%
+      perspective-origin: top right
+      transform: perspective(1000px)
+
+    &--right
+      bottom: 0
+      right: 0
+      perspective-origin: center left
+      
+      // width: 27.6%
+      // padding-bottom: 39%
+      transform: translate3d(22%, 7vh, 0px) scale(0.83) perspective(1000px)
+
+      @media (min-width: 901px)
+        width: 250px
+        padding-bottom: 350px
+      @media (min-width: 1100px)
+        width: 305px
+        padding-bottom: 430px
+      @media (min-width: 1300px)
+        width: 360px
+        padding-bottom: 510px
+      @media (min-width: 1430px)
+        width: 400px
+        padding-bottom: 560px
+      @media (min-width: 1900px)
+        width: 530px
+        padding-bottom: 750px
+      @media (min-width: 2200px)
+        width: 700px
+        padding-bottom: 990px
+
+      @media (max-width: $tablet)
+        +static
+        transform: translate(0, 0)
+
+        display: block
+        margin: 72px auto 120px
+        width: 72%
+        height: 101.4vw
+        max-width: 480px
+        max-height: 600px
+
+        &::before
+          content: ''
+          position: absolute
+          z-index: -1
+          top: -40px
+          left: 50%
+          right: 0
+          bottom: -40px
+
+          width: 73%
+          height: calc(100% + 80px)
+          transform: translate(-50%, 0)
+          border: 1px solid $acc
+
+      .image-block__inner
+        transform: scale(1.2)
+        @media (max-width: $tablet)
+          transform: scale(1)
+
+  .i-towers
+    top: 40px
+
+    display: none
+    @media (max-width: $tablet)
+      display: block
+
+  .i-logo
+    +ff('width', (500px: 280px, 1300px: 360px, 1920px: 480px, 2550px: 640px))
+    height: auto
+    transform: perspective(1000px)
+
+  .i-mouse
+    position: absolute
+    bottom: 56px
+    left: 50%
+    transform: translateX(-50%)
+
+    @media (max-width: $tablet)
+      display: none
+
+  &__title
+    position: absolute
+    top: 50%
+    left: 50%
+    transform: translate(-50%, -50%)
+
+    @media (max-width: $tablet)
+      position: static
+      transform: translate(0, 0)
+      
+      padding-top: 152px
+      text-align: center
+
+
+.section-1
+  .image-block, .i-logo
+    opacity: 0
+    @media (max-width: $tablet)
+      opacity: 1
+    

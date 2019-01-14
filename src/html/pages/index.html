@@ -1,0 +1,675 @@
+@include('../blocks/head.html') @include('../blocks/sprite.html')
+
+<!-- Header -->
+@include('../blocks/header.html')
+
+<main>
+  <button class="rhomb enter-button js-webgl">
+    <p>Войти</p>
+    <!--
+      <span class="enter-button__line b-left"></span>
+      <span class="enter-button__line b-right"></span>
+      <span class="enter-button__line t-left"></span>
+      <span class="enter-button__line t-right"></span>
+    -->
+  </button>
+
+  <div class="sections">
+    <section class="section section-1">
+      <svg class="i-towers"><use xlink:href="#i-towers" /></svg>
+      <svg class="i-legenda-logo"><use xlink:href="#i-legenda-logo" /></svg>
+
+      <div class="section-1__title">
+        <h1>
+          <span style="display: none"> Институтский, 16 </span>
+          <span style="display: none"> Legenda Premium </span>
+          <svg class="i-logo"><use xlink:href="#i-logo" /></svg>
+        </h1>
+      </div>
+
+      <div class="image-block image-block--top" data-micromodal-trigger="modal">
+        <div
+          class="image-block__inner"
+          style="background-image: url(img/1.jpg)"
+        ></div>
+      </div>
+      <div
+        class="image-block image-block--left"
+        data-micromodal-trigger="modal"
+      >
+        <div
+          class="image-block__inner"
+          style="background-image: url(img/2.jpg)"
+        ></div>
+      </div>
+      <div
+        class="image-block image-block--right"
+        data-micromodal-trigger="modal"
+      >
+        <div
+          class="image-block__inner"
+          style="background-image: url(img/3.jpg)"
+        ></div>
+      </div>
+
+      <svg class="i-mouse"><use xlink:href="#i-mouse" /></svg>
+    </section>
+
+    <section class="section section-2">
+      <svg class="i-towers"><use xlink:href="#i-towers" /></svg>
+
+      <div class="text-block">
+        <h2 class="text-block__title split-text">Legenda Premium</h2>
+        <div class="text-block__body">
+          <small class="text-block__num">001</small>
+          <p class="text-block__text">
+            Принято считать, что дома класса премиум должны обладать общими
+            локационными характеристиками. Но любая общность делает
+            исключительное – стандартным. Legenda традиционно держится своих
+            взглядов в ущерб массовым стереотипам.
+            <span class="text-dark">Институтский. 16</span> – премиум-класс с
+            новыми традициями своего сегмента
+          </p>
+        </div>
+      </div>
+
+      <div class="cover cover--top"></div>
+      <div class="cover cover--bottom"></div>
+    </section>
+
+    <section class="section section-3">
+      <svg class="i-towers"><use xlink:href="#i-towers" /></svg>
+
+      <div class="text-block">
+        <h2 class="text-block__title split-text">Время сильных</h2>
+        <div class="text-block__body">
+          <small class="text-block__num">002</small>
+          <p class="text-block__text">
+            Великие ревущие «двадцатые»: жизнь, полная контрастов, мода, не
+            оглядывающаяся по сторонам, джаз как культ импровизации, модерн во
+            всем своем протесте, виски в самый разгар сухого закона.
+            бутлегерство, риск, азарт, смелость и свобода. время сильных мужчин
+            и прекрасных женщин. больших амбиций, больших надежд и больших
+            решений. прекрасное и эфемерное – снова воплощенное в камне.
+          </p>
+        </div>
+      </div>
+
+      @include('../blocks/circle.html')
+
+      <div
+        class="image-block image-block--bottom"
+        data-micromodal-trigger="modal"
+      >
+        <div
+          class="image-block__inner"
+          style="background-image: url(img/4.jpg)"
+        ></div>
+      </div>
+
+      <div class="image-block image-block--top" data-micromodal-trigger="modal">
+        <div
+          class="image-block__inner"
+          style="background-image: url(img/5.jpg)"
+        ></div>
+      </div>
+
+      <div class="cover cover--top"></div>
+      <div class="cover cover--bottom"></div>
+    </section>
+
+    <section class="section section-4">
+      <svg class="i-towers"><use xlink:href="#i-towers" /></svg>
+
+      <div class="section-4-block flex">
+        <div class="section-4-block__left">
+          <div class="section-4-block__img-wrap">
+            <div
+              class="section-4-block__img"
+              style="background-image: url(img/map.svg)"
+            ></div>
+          </div>
+          <a href="" class="button-stroke">Смотреть на карте</a>
+        </div>
+
+        <div class="section-4-block__info">
+          <div class="text-block">
+            <h2 class="text-block__title split-text">У СЕРЕБРЯНОГО ПРУДА</h2>
+            <div class="text-block__body">
+              <small class="text-block__num">003</small>
+              <p class="text-block__text">
+                Место, выбранное для жизни, определяет дальнейшее ее течение.
+                Одни ищут уединения. Другие – шелест ветра в ветвях деревьев.
+                Третьи – неутомимый пульс города. Кому-то – близость блестящей
+                водной глади, другому – полыхающий в окне закат на высоте
+                птичьего полета. Но есть те, кто ищет сразу все – движимые
+                мечтой о собственном идеале. Добро пожаловать... в ваш новый
+                дом!
+              </p>
+            </div>
+          </div>
+
+          <ul class="numbers">
+            <li class="flex flex-column align-center text-center">
+              <span class="numbers__label"> Парк «Серебряный пруд» </span>
+              <b class="numbers__num">1</b>
+              <p class="text-base">минута пешком*</p>
+            </li>
+            <li class="flex flex-column align-center text-center">
+              <span class="numbers__label"> Центр Санкт-Петербурга </span>
+              <b class="numbers__num">20</b>
+              <p class="text-base">минут на машине*</p>
+            </li>
+            <li class="flex flex-column align-center text-center">
+              <span class="numbers__label"> ст.м. «Площадь мужества» </span>
+              <b class="numbers__num">15</b>
+              <p class="text-base">минут пешком*</p>
+            </li>
+            <li class="flex flex-column align-center text-center">
+              <span class="numbers__label"> Парк «Сосновка» </span>
+              <b class="numbers__num">15</b>
+              <p class="text-base">минут пешком*</p>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-ardeko">
+      <svg class="i-towers"><use xlink:href="#i-towers" /></svg>
+
+      <div class="cover cover--left"></div>
+      <div class="cover cover--right"></div>
+
+      <div
+        class="image-block image-block--left"
+        data-micromodal-trigger="modal"
+      >
+        <div
+          class="image-block__inner"
+          style="background-image: url(img/ardeko.jpg)"
+        ></div>
+      </div>
+
+      <div class="image-border"></div>
+
+      <div
+        class="image-block image-block--right"
+        data-micromodal-trigger="modal"
+      >
+        <div
+          class="image-block__inner"
+          style="background-image: url(img/ny.jpg)"
+        ></div>
+      </div>
+
+      <div class="text-block">
+        <h2 class="text-block__title split-text">Роскошь Ар-Деко</h2>
+        <div class="text-block__body">
+          <small class="text-block__num">004</small>
+          <p class="text-block__text">
+            Архитектура рождается местом. величественные башни на берегу
+            серебряного пруда вдохновлены знаменитыми небоскребами эпохи ардеко
+            в центральном парке Нью Йорка. строгая, симметричная, брутальная
+            композиция – настоящая ода смелости и стремлениям, сложным вызовам
+            и, казалось бы, недостижимым высотам теплый оттенок фасадного камня.
+          </p>
+        </div>
+      </div>
+
+      <div class="cover cover--top"></div>
+      <div class="cover cover--bottom"></div>
+    </section>
+
+    <section class="section section-5">
+      <svg class="i-towers"><use xlink:href="#i-towers" /></svg>
+
+      <div class="text-block">
+        <h2 class="text-block__title split-text">Стиль жизни</h2>
+        <div class="text-block__body">
+          <small class="text-block__num">004</small>
+          <p class="text-block__text">
+            Мягкое свечение золота в отражении зеркал, легкий перезвон
+            хрустальных подвесок, богатый рисунок камня на стенах и теплый свет
+            оникса. Свет, струящийся из высоких окон, блики солнца на ажурном
+            орнаменте, глубокий, темный, драматичный бархат мебели. Сдержанная
+            интеллигентная роскошь Ар-деко. Элегантный шик, вписанный в границы
+            хорошего вкуса.
+          </p>
+        </div>
+      </div>
+
+      <div
+        class="image-block image-block--bottom"
+        data-micromodal-trigger="modal"
+      >
+        <div
+          class="image-block__inner"
+          style="background-image: url(img/6.jpg)"
+        ></div>
+      </div>
+
+      <div class="image-block image-block--top" data-micromodal-trigger="modal">
+        <div
+          class="image-block__inner"
+          style="background-image: url(img/7.jpg)"
+        ></div>
+      </div>
+
+      <div
+        class="image-block image-block--right"
+        data-micromodal-trigger="modal"
+      >
+        <div
+          class="image-block__inner"
+          style="background-image: url(img/8.jpg)"
+        ></div>
+      </div>
+
+      <div class="elevator">
+        <svg class="i-elevator"><use xlink:href="#i-elevator" /></svg>
+      </div>
+
+      <div class="cover cover--left"></div>
+      <div class="cover cover--center"></div>
+      <div class="cover cover--right"></div>
+      <div class="cover cover--outside"></div>
+    </section>
+
+    <section class="section section-6">
+      <svg class="i-towers"><use xlink:href="#i-towers" /></svg>
+
+      <h2 class="section-6__title"><span>Квартиры</span></h2>
+      <h2 class="text-block__title">Квартиры</h2>
+
+      <a href="" download class="button-stroke section-6__download">
+        Буклет PDF 24 MB.
+      </a>
+
+      <div class="slider">
+        <div class="slide is-active">
+          <div class="slide__img image-block">
+            <div
+              class="image-block__inner"
+              style="background-image: url(img/layouts/1.svg)"
+            ></div>
+          </div>
+        </div>
+
+        <div class="slide">
+          <div class="slide__img image-block">
+            <div
+              class="image-block__inner"
+              style="background-image: url(img/layouts/2.svg)"
+            ></div>
+          </div>
+        </div>
+
+        <div class="slide">
+          <div class="slide__img image-block">
+            <div
+              class="image-block__inner"
+              style="background-image: url(img/layouts/3.svg)"
+            ></div>
+          </div>
+        </div>
+
+        <div class="slide">
+          <div class="slide__img image-block">
+            <div
+              class="image-block__inner"
+              style="background-image: url(img/layouts/4.svg)"
+            ></div>
+          </div>
+        </div>
+
+        <div class="slide">
+          <div class="slide__img image-block">
+            <div
+              class="image-block__inner"
+              style="background-image: url(img/layouts/5.svg)"
+            ></div>
+          </div>
+        </div>
+
+        <div class="slide">
+          <div class="slide__img image-block">
+            <div
+              class="image-block__inner"
+              style="background-image: url(img/layouts/6.svg)"
+            ></div>
+          </div>
+        </div>
+
+        <div class="slide">
+          <div class="slide__img image-block">
+            <div
+              class="image-block__inner"
+              style="background-image: url(img/layouts/7.svg)"
+            ></div>
+          </div>
+        </div>
+
+        <div class="slide">
+          <div class="slide__img image-block">
+            <div
+              class="image-block__inner"
+              style="background-image: url(img/layouts/8.svg)"
+            ></div>
+          </div>
+        </div>
+
+        <div class="slide">
+          <div class="slide__img image-block">
+            <div
+              class="image-block__inner"
+              style="background-image: url(img/layouts/9.svg)"
+            ></div>
+          </div>
+        </div>
+
+        <div class="slide">
+          <div class="slide__img image-block">
+            <div
+              class="image-block__inner"
+              style="background-image: url(img/layouts/10.svg)"
+            ></div>
+          </div>
+        </div>
+
+        <div class="slide">
+          <div class="slide__img image-block">
+            <div
+              class="image-block__inner"
+              style="background-image: url(img/layouts/11.svg)"
+            ></div>
+          </div>
+        </div>
+
+        <div class="slide">
+          <div class="slide__img image-block">
+            <div
+              class="image-block__inner"
+              style="background-image: url(img/layouts/12.svg)"
+            ></div>
+          </div>
+        </div>
+
+        <div class="slide">
+          <div class="slide__img image-block">
+            <div
+              class="image-block__inner"
+              style="background-image: url(img/layouts/13.svg)"
+            ></div>
+          </div>
+        </div>
+
+        <div class="slide">
+          <div class="slide__img image-block">
+            <div
+              class="image-block__inner"
+              style="background-image: url(img/layouts/14.svg)"
+            ></div>
+          </div>
+        </div>
+
+        <div class="slide">
+          <div class="slide__img image-block">
+            <div
+              class="image-block__inner"
+              style="background-image: url(img/layouts/15.svg)"
+            ></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="slider-nav">
+        <button class="slider-nav__btn slider-nav__btn--prev rhomb">
+          <svg class="i-arrow"><use xlink:href="#i-arrow" /></svg>
+        </button>
+        <div class="slider-nav__box">
+          <span class="slider-nav__num slider-nav__num--current text-label"
+            >001</span
+          >
+          <span class="text-label slider-nav__num--slash">/</span>
+          <span class="slider-nav__num slider-nav__num--length text-label"
+            >015</span
+          >
+        </div>
+        <button class="slider-nav__btn slider-nav__btn--next rhomb">
+          <svg class="i-arrow"><use xlink:href="#i-arrow" /></svg>
+        </button>
+      </div>
+    </section>
+
+    <section class="section section-7">
+      <svg class="i-towers"><use xlink:href="#i-towers" /></svg>
+      <h2 class="text-block__title">Проект</h2>
+
+      <div class="section-7__block flex flex-column">
+        <ul class="cells">
+          <li>
+            <b>109</b>
+            <p class="text-base">квартир</p>
+          </li>
+          <li>
+            <b>15</b>
+            <p class="text-base">типов планировок</p>
+          </li>
+          <li>
+            <b>23</b>
+            <p class="text-base">этажа</p>
+          </li>
+          <li>
+            <b>9,6</b>
+            <p class="text-base">метра уровень первого жилого комплекса</p>
+          </li>
+          <li>
+            <b>2</b>
+            <p class="text-base">уровня подземного паркинга на 247 мест</p>
+          </li>
+        </ul>
+        <h2 class="section-7__title">Проект</h2>
+      </div>
+
+      <div class="elevator">
+        <svg class="i-elevator"><use xlink:href="#i-elevator" /></svg>
+      </div>
+
+      <div
+        class="image-block image-block--left"
+        data-micromodal-trigger="modal"
+      >
+        <div
+          class="image-block__inner"
+          style="background-image: url(img/9.jpg)"
+        ></div>
+      </div>
+
+      <div
+        class="image-block image-block--right"
+        data-micromodal-trigger="modal"
+      >
+        <div
+          class="image-block__inner"
+          style="background-image: url(img/10.jpg)"
+        ></div>
+      </div>
+
+      <div class="cover cover--left"></div>
+      <div class="cover cover--center"></div>
+      <div class="cover cover--right"></div>
+    </section>
+
+    <section class="section section-8">
+      <svg class="i-logo"><use xlink:href="#i-logo" /></svg>
+
+      <a
+        href="https://its.agency/"
+        class="copyright copyright--desktop"
+        target="_blank"
+      >
+        Сделано в <img src="img/its.svg" alt="its.agency" />
+      </a>
+
+      <div class="section-8__block flex flex-column align-center">
+        <h2 class="text-block__title split-text">Узнайте больше</h2>
+
+        <form
+          class="form flex align-center"
+          id="subscribe-form"
+          action="/ajax/callback"
+          onsubmit="sendSubscribeForm(this);return false;"
+          method="post"
+        >
+          <fieldset class="form__body">
+            <div class="input">
+              <label>
+                <input
+                  class="text-base mask-phone"
+                  type="phone"
+                  placeholder="Введите номер телефона"
+                  required
+                  minlength="1"
+                />
+              </label>
+            </div>
+
+            <label class="checkbox text-base">
+              <svg class="i-daw"><use xlink:href="#i-daw" /></svg>
+              <input class="checkbox__input" type="checkbox" required />
+              Согласен на <a href="">обработку персональных данных</a> и
+              подписку
+            </label>
+          </fieldset>
+
+          <button class="form__btn rhomb" type="submit">
+            <svg class="i-arr"><use xlink:href="#i-arr" /></svg>
+          </button>
+        </form>
+      </div>
+
+      <div class="contacts flex flex-column">
+        <div class="contacts__info">
+          <p class="contacts__label text-base">Телефон</p>
+          <a href="tel:88001001485" class="contacts__phone"
+            >8 (800) 100-14-85</a
+          >
+        </div>
+
+        <div class="flex flex-column">
+          <div class="contacts__cell">
+            <div class="image-block">
+              <div
+                class="image-block__inner"
+                style="background-image: url(img/c1.jpg)"
+              ></div>
+            </div>
+            <p class="text-base">Андреева Виктория</p>
+            <p class="contacts__spec">Старший менеджер</p>
+          </div>
+
+          <div class="contacts__cell">
+            <div class="image-block">
+              <div
+                class="image-block__inner"
+                style="background-image: url(img/c2.jpg)"
+              ></div>
+            </div>
+            <p class="text-base">Андреева Виктория</p>
+            <p class="contacts__spec">Старший менеджер</p>
+          </div>
+
+          <a href="" class="button-stroke">Сайт застройщика</a>
+
+          <a
+            href="https://its.agency/"
+            class="copyright copyright--mobile"
+            target="_blank"
+          >
+            Сделано в <img src="img/its.svg" alt="its.agency" />
+          </a>
+        </div>
+      </div>
+
+      <div class="cover cover--outside"></div>
+    </section>
+  </div>
+</main>
+
+<script defer src="js/index.js"></script>
+
+<div class="modal js-modal">
+  <button type="button" class="modal__close js-modal-close"></button>
+  <div class="modal__wrap">
+    <p class="modal__title">Спасибо</p>
+    <p class="modal__descr">Мы скоро вам позвоним.</p>
+  </div>
+</div>
+<div class="overlay js-overlay"></div>
+
+@include('../blocks/modal.html')
+
+<script>
+  var modal = document.querySelector('.js-modal'),
+    overlay = document.querySelector('.js-overlay'),
+    modalCloseBtn = document.querySelector('.js-modal-close');
+
+  modalCloseBtn.addEventListener(
+    'click',
+    removeMessage.bind(this, modal, overlay)
+  );
+
+  function sendSubscribeForm(form) {
+    ajaxPost(form, function() {
+      if (this.status === 200) {
+        //alert("Форма успешно отправлена! Наши менеджеры свяжутся с вами в ближайшее время");
+        renderMessage(modal, overlay);
+      }
+    });
+  }
+  /**
+   * Takes a form node and sends it over AJAX.
+   * @param {HTMLFormElement} form - Form node to send
+   * @param {function} callback - Function to handle onload.
+   *                              this variable will be bound correctly.
+   */
+
+  function renderMessage(modal, overlay) {
+    modal.classList.add('modal--active');
+    overlay.classList.add('overlay--active');
+  }
+
+  function removeMessage() {
+    modal.classList.remove('modal--active');
+    overlay.classList.remove('overlay--active');
+  }
+
+  function ajaxPost(form, callback) {
+    var url = form.action,
+      xhr = new XMLHttpRequest();
+
+    //Filtering all of the fields on the form
+    var params = [].filter
+      .call(form.elements, function(el) {
+        return !!el.name; //Filter nameless elements.
+      })
+      .map(function(el) {
+        //Map each field into a name=value string, make sure to properly escape!
+        return encodeURIComponent(el.name) + '=' + encodeURIComponent(el.value);
+      })
+      .join('&'); //Then join all the strings by &
+    params += '&form_id=' + form.id;
+    xhr.open('POST', url);
+    xhr.setRequestHeader('Content-type', 'application/x-form-urlencoded');
+
+    //.bind ensures that this inside of the function is the XHR object.
+    xhr.onload = callback.bind(xhr);
+
+    //All preparations are clear, send the request!
+    xhr.send(params);
+  }
+</script>
+
+<!-- footer -->
+@include('../blocks/footer.html')

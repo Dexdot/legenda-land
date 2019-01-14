@@ -1,0 +1,35 @@
+.text-block
+  &__title
+    +metro
+    color: $acc
+    +ff('font-size', (500px: 40px, 1100px: 48px, 1300px: 56px, 1920px: 72px, 2550px: 96px))
+    line-height: 1.2
+    letter-spacing: 0.06em
+    text-transform: uppercase
+    +ff('margin-bottom', (1300px: 40px, 1920px: 64px, 2500px: 72px))
+    
+    @media (max-width: 360px)
+      font-size: 32px
+
+  &__text
+    +ff('padding-left', (900px: 30px, 1300px: 60px, 1920px: 80px, 2550px: 96px))
+    line-height: 1.875
+    letter-spacing: 0.02em
+    font-size: 14px
+    @media (min-width: 1900px)
+      font-size: 16px
+    @media (min-width: 2200px)
+      font-size: 18px
+
+  &__num
+    +rbt(m)
+    font-size: 10px
+    line-height: 15px
+    letter-spacing: 0.1em
+    color: rgba($acc, 0.6)
+    padding-top: 3px
+
+  &__body
+    display: flex
+    align-items: flex-start
+

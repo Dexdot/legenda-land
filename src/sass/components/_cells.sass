@@ -1,0 +1,101 @@
+  
+.cells
+  display: flex
+
+  @media (max-width: $tablet)
+    justify-content: center
+    flex-wrap: wrap
+    margin-top: 104px
+    margin-left: auto
+    margin-right: auto
+  
+  li
+    display: flex
+    flex-direction: column
+    align-items: center
+    justify-content: center
+    width: $cell-size
+    height: $cell-size
+    @media (max-width: 1700px)
+      width: $cell-size-sm
+      height: $cell-size-sm
+    @media (max-width: 1200px)
+      width: 140px
+      height: 140px
+    @media (max-width: $tablet)
+      width: 34vw
+      height: 34vw
+    @media (max-width: $mob)
+      width: 168px
+      height: 168px
+    @media (max-width: 360px)
+      width: 136px
+      height: 136px
+
+    border: 1px solid rgba($acc, 0.3)
+    text-align: center
+
+  li:nth-child(even)
+    margin-top: $cell-size
+    @media (max-width: 1700px)
+      margin-top: calc(#{$cell-size-sm} - 1px)
+    @media (max-width: 1100px)
+      margin-top: calc(#{140px} - 1px)
+    @media (max-width: $tablet)
+      margin-top: calc(#{34vw} - 1px)
+    @media (max-width: $mob)
+      margin-top: calc(#{168px} - 1px)
+    @media (max-width: 360px)
+      margin-top: calc(#{136px} - 1px)
+
+  li:nth-child(odd)
+    margin-bottom: $cell-size
+    @media (max-width: 1700px)
+      margin-bottom: $cell-size-sm
+    @media (max-width: 1100px)
+      margin-bottom: 140px
+    @media (max-width: $tablet)
+      margin-bottom: 34vw
+    @media (max-width: $mob)
+      margin-bottom: 168px
+    @media (max-width: 360px)
+      margin-bottom: 136px
+
+  li:last-child
+    @media (max-width: 1080px)
+      display: none
+    @media (max-width: $tablet)
+      display: flex
+      margin-right: 34vw
+      margin-bottom: 70px
+    @media (max-width: $mob)
+      margin-right: 168px
+    @media (max-width: 360px)
+      margin-right: 136px
+
+  b
+    +metro
+    color: $acc
+    +ff('font-size', (1300px: 56px, 1920px: 72px, 2550px: 96px))
+    line-height: 1
+    margin-bottom: 16px
+
+    @media (max-width: 1200px)
+      font-size: 36px
+      margin-bottom: 8px
+    @media (max-width: $tablet)
+      margin-bottom: 16px
+      font-size: 72px
+    @media (max-width: 360px)
+      font-size: 36px
+    
+
+  .text-base
+    max-width: 136px
+    @media (max-width: 1200px)
+      font-size: 11px
+      max-width: 116px
+    @media (max-width: $tablet)
+      font-size: 13px
+
+  

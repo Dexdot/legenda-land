@@ -1,0 +1,32 @@
+.form
+  padding-top: 72px
+
+  @media (max-width: $tablet)
+    padding-top: 40px
+    flex-direction: column
+
+  &__body
+    width: 400px
+    padding-right: 40px
+
+    @media (max-width: 1080px)
+      width: 280px
+  
+    @media (max-width: $tablet)
+      padding-bottom: 80px
+      padding-right: 0
+      width: 100%
+      max-width: 400px
+    @media (max-width: $mob)
+      padding-left: 32px
+      padding-right: 32px
+      
+
+  &__btn
+    transform: translate(0, -20px)
+    margin-left: 24px
+
+  .input
+    width: 100%
+    margin-bottom: 32px
+

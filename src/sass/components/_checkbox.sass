@@ -1,0 +1,78 @@
+.checkbox
+  transition: $trs
+  color: rgba(#fff, 0.6)
+  cursor: pointer
+  
+  padding-left: 22px
+  padding-top: 1px
+  position: relative
+
+.checkbox__input
+  position: absolute
+  opacity: 0
+  top: 0
+  left: 0
+  width: 12px
+  height: 12px
+
+.checkbox::before
+  content: ''
+  position: absolute
+  top: 2px
+  left: 0
+  width: 12px
+  height: 12px
+  border: 1px solid $acc
+
+.checkbox .i-daw
+  stroke-width: 2.5
+  position: absolute
+  top: 2px
+  left: 0
+  opacity: 0
+  transition: $trs
+
+.checkbox::after
+  content: ''
+  position: absolute
+  top: -4px
+  left: -6px
+  width: 24px
+  height: 24px
+  border-radius: 50%
+  background: $acc
+  z-index: -1
+  opacity: 0
+  
+.checkbox a
+  color: rgba($acc, 0.6)
+  transition: $trs
+  &:hover,
+  &:focus,
+  &:visited,
+  &:active  
+    color: rgba($acc, 0.6)
+
+.checkbox--is-clicked
+  &::after
+    animation: checkbox-p 0.3s forwards
+
+.checkbox--is-checked
+  color: rgba(#fff, 0.6)
+  a
+    color: rgba($acc, 0.6)
+    &:hover,
+    &:focus,
+    &:visited,
+    &:active
+      color: rgba($acc, 0.6)
+
+  &::before
+    border: 0
+    background: $acc
+
+  .i-daw
+    opacity: 1
+
+
+	

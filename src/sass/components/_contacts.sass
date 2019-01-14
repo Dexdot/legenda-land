@@ -1,0 +1,131 @@
+.contacts
+  position: absolute
+  top: 50%
+  right: 0
+  transform: translate(0, -50%)
+  padding: 0 56px
+  border-left: 1px solid rgba($acc, 0.1)
+
+  @media (max-width: 1080px)
+    padding: 0 40px
+
+  @media (max-width: $tablet)
+    margin-bottom: 112px
+    position: static
+    transform: translate(0, 0)
+
+  @media (max-width: $mob)
+    padding: 0 24px
+
+  &__info
+    +ff('margin-bottom', (1300px: 32px, 1920px: 64px))
+
+    @media (max-width: $tablet)
+      text-align: center
+      margin-bottom: 64px
+
+  &__label
+    margin-bottom: 12px
+
+  &__phone
+    +rbt(r)
+    font-size: 16px
+    letter-spacing: 0.02em
+    +link-color($acc)
+
+    @media (min-width: 1900px)
+      font-size: 18px
+
+  .button-stroke
+    text-align: center
+    margin-top: 24px
+
+    @media (max-width: $tablet)
+      margin-top: 64px
+
+  &__cell
+    padding-right: 22px
+    position: relative
+
+    @media (max-width: $tablet)
+      padding-right: 0
+      display: flex
+      flex-direction: column
+      max-height: 163px
+      width: 318px
+      flex-wrap: wrap
+    @media (max-width: $mob)
+      width: 100%
+
+    &:nth-child(even)
+      @media (max-width: $tablet)
+        align-self: flex-end
+
+      .image-block
+        @media (max-width: $tablet)
+          order: 1
+          margin-left: 24px
+
+    &:nth-child(odd)
+      @media (max-width: $tablet)
+        align-self: flex-start
+
+      .image-block
+        @media (max-width: $tablet)
+          margin-right: 24px
+
+    .image-block
+      margin-bottom: 8px
+      +ff('width', (1300px: 120px, 1920px: 136px))
+      +ff('height', (1300px: 120px, 1920px: 136px))
+      filter: grayscale(100%)
+      transition: $trs-forhims-4
+
+      @media (min-width: 1900px)
+        margin-bottom: 16px
+
+      @media (max-width: $tablet)
+        position: relative
+        width: 163px
+        height: 163px
+        min-width: 163px
+        min-height: 163px
+
+      @media (max-width: 360px)
+        position: relative
+        width: 120px
+        height: 120px
+        min-width: 120px
+        min-height: 120px
+
+    &:not(:last-child)
+      +ff('margin-bottom', (1300px: 24px, 1920px: 48px))
+      @media (max-width: $mob)
+        margin-bottom: 0
+
+  &__spec
+    +rbt(l)
+    font-size: 12px
+    letter-spacing: 0.04em
+    color: rgba($acc, 0.6)
+    writing-mode: vertical-lr
+    transform: rotate(180deg)
+
+    position: absolute
+    top: 0
+    right: 0
+
+    @media (max-width: $tablet)
+      position: static
+      writing-mode: unset
+      transform: rotate(0)
+      width: 126px
+      white-space: normal
+
+
+  .contacts__cell .text-base
+    @media (max-width: $tablet)
+      margin-top: 32px
+      width: 126px
+      white-space: normal
+
